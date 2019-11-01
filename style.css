@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -24,10 +30,122 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    color: #25133d;
+}
+
+.menu li {
+    align-items: space-between;
+    padding: 15px 30px;
+}
+
+.appka {
+    font-weight: bold;
+}
+
+.vizual {
+    background-image: url(images/pozadi.jpg);
+    background-size: cover;
+    position: relative;
+    height: 450px;
+    color: white;
+    padding-left: 40px;
+}
+
+.nazev {
+    font-weight: 500;
+    font-size: 5em;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.slogan {
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.telefon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+ 
+}
+
+.tlacitko1 {
+    border: solid;
+    border-radius: 10px;
+    border-color: ivory;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tlacitko2 {
+    border: solid;
+    border-radius: 10px;
+    border-color: ivory;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+a:hover {
+    background-color: #48418e;
+}
+
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sloupec {
+    flex: 1 1 calc(100% / 3);
+    text-align: center;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48418e;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.img {
+    width: 60px;
+} 
+
+.paticka {
+    background-color: #48418e;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+}
